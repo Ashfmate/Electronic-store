@@ -129,11 +129,11 @@
   <ItemGroup>
     <ClCompile Include="Electronic store.cpp" />
     <ClCompile Include="Electronic_Product.cpp" />
-    <ClCompile Include="Login_page.cpp" />
+    <ClCompile Include="Signing_page.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Electronic_Product.h" />
-    <ClInclude Include="Login_page.h" />
+    <ClInclude Include="Signing_page.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

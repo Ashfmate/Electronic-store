@@ -21,7 +21,7 @@
     <ClCompile Include="Electronic_Product.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Login_page.cpp">
+    <ClCompile Include="Signing_page.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="Electronic_Product.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Login_page.h">
+    <ClInclude Include="Signing_page.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

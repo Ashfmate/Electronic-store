@@ -3,6 +3,6 @@
 
 int main()
 {
-	Login_page{}();
+	Signing_page{}();
 	while (!_kbhit());
 }
