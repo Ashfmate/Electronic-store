@@ -5,7 +5,7 @@
 
 using fmt::print;
 
-Login_page::Choices Login_page::operator()()
+Signing_page::Choices Signing_page::operator()()
 {
 	while (true)
 	{
@@ -17,7 +17,7 @@ Login_page::Choices Login_page::operator()()
 	return choice;
 }
 
-void Login_page::draw()
+void Signing_page::draw()
 {
 	print(fmt::fg(fmt::color::blue), 
 		"Sign in if you already have an account, otherwise make one by choosing register\n");
@@ -33,7 +33,7 @@ void Login_page::draw()
 		"Press enter to confirm");
 }
 
-bool Login_page::choice_control()
+bool Signing_page::choice_control()
 {
 	if (choice < Choices::Count && choice > Choices::Start)
 	{

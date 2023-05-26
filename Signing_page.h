@@ -2,7 +2,7 @@
 
 typedef const char* string;
 
-class Login_page
+class Signing_page
 {
 public:
 	enum class Choices
