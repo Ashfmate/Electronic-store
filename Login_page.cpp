@@ -19,11 +19,18 @@ Login_page::Choices Login_page::operator()()
 
 void Login_page::draw()
 {
-	print(fmt::fg(fmt::color::blue), "Sign in if you already have an account, otherwise make one by choosing register\n");
-	print((choice == Choices::Login) ? fmt::fg(fmt::color::green) : fmt::fg(fmt::color::white), "\t\t\t{}\n", login_expression);
-	print((choice == Choices::Register) ? fmt::fg(fmt::color::green) : fmt::fg(fmt::color::white), "\t\t\t{}\n", register_expression);
-	print((choice == Choices::Quit) ? fmt::fg(fmt::color::green) : fmt::fg(fmt::color::white), "\t\t\t{}\n", quit_expression);
-	print(fmt::fg(fmt::color::blue), "Press enter to confirm");
+	print(fmt::fg(fmt::color::blue), 
+		"Sign in if you already have an account, otherwise make one by choosing register\n");
+	size_t size = size_t(Choices::Count);
+	for (size_t i = size_t(Choices::Start) + 1; i < size; ++i)
+	{
+		auto text_color =
+			(i == size_t(choice)) ?
+			fmt::fg(fmt::color::green) : fmt::fg(fmt::color::white);
+		print(text_color, "\t\t\t{}\n", expressions[i]);
+	}
+	print(fmt::fg(fmt::color::blue), 
+		"Press enter to confirm");
 }
 
 bool Login_page::choice_control()

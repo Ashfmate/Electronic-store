@@ -1,11 +1,13 @@
 #pragma once
 
+typedef const char* string;
+
 class Login_page
 {
 public:
 	enum class Choices
 	{
-		Start,
+		Start = -1,
 		Login,
 		Register,
 		Quit,
@@ -18,9 +20,8 @@ private:
 	bool choice_control();
 private:
 	Choices choice = Choices::Login;
-	static constexpr const char* login_expression = "Log in";
-	static constexpr const char* register_expression = "Register";
-	static constexpr const char* quit_expression = "Quit";
+	static constexpr string expressions[size_t(Choices::Count)] = 
+	{"Log in" , "Register" , "Quit"};
 	static constexpr int up_key = 72;
 	static constexpr int down_key = 80;
 };
