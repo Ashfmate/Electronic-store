@@ -42,9 +42,9 @@ bool Signing_page::choice_control()
 		else if (temp == 13) return true;
 
 		if (temp == up_key)
-			choice = Choices(int(choice) - 1);
+			choice = Choices(choice - 1);
 		else if (temp == down_key)
-			choice = Choices(int(choice) + 1);
+			choice = Choices(choice + 1);
 	}
 	else
 		(choice == Choices::Start) ? choice = Choices::Quit : choice = Choices::Login;
