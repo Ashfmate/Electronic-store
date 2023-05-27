@@ -2,6 +2,7 @@
 #include <array>
 #include <functional>
 #include "../Headers/Signing_page.h"
+#include "../Headers/Login_page.h"
 
 class Program
 {
@@ -24,6 +25,7 @@ private:
 private:
 	std::array<std::function<void()>, Count> funcs;
 	bool exit_confirm = false;
+	bool return_from_login = false;
 	sign_choice Signin_page_result = sign_choice::Start;
 };
 

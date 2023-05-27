@@ -11,7 +11,14 @@ Program::Program()
 	};
 	funcs[Login] = [&]()
 	{
-		exit_confirm = true;
+		if (Login_page{}())
+		{
+			system("cls");
+			printf("SUCCESS");
+			exit_confirm = true;
+		}
+		else
+			Signin_page_result = Signing_page{}();
 	};
 	funcs[Register] = [&]()
 	{
