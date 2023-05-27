@@ -10,20 +10,27 @@ Program::Program()
 		Signin_page_result = Signing_page{}();
 	};
 	funcs[Login] = [&]()
-	{};
+	{
+		exit_confirm = true;
+	};
 	funcs[Register] = [&]()
-	{};
+	{
+		exit_confirm = true;
+	};
 	funcs[Quitting] = [&]()
-	{};
+	{
+		exit_confirm = true;
+	};
 }
 
 int Program::start()
 {
-	funcs[Signing]();
+	while (!exit_confirm)
+	{
+		auto converted = sign_choice_to_Pages_converter(Signin_page_result);
 
-	auto converted = sign_choice_to_Pages_converter(Signin_page_result);
-	
-	funcs[converted]();
+		funcs[converted]();
+	}
 
 	PAUSE;
 	return 0;
