@@ -18,18 +18,30 @@
     <ClCompile Include="Electronic store.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Electronic_Product.cpp">
+    <ClCompile Include="CPP\Electronic_Product.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Signing_page.cpp">
+    <ClCompile Include="CPP\Login_page.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP\Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPP\Signing_page.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Electronic_Product.h">
+    <ClInclude Include="Headers\Electronic_Product.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Signing_page.h">
+    <ClInclude Include="Headers\Login_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Signing_page.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,13 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CPP\Electronic_Product.cpp" />
+    <ClCompile Include="CPP\Login_page.cpp" />
+    <ClCompile Include="CPP\Program.cpp" />
+    <ClCompile Include="CPP\Signing_page.cpp" />
     <ClCompile Include="Electronic store.cpp" />
-    <ClCompile Include="Electronic_Product.cpp" />
-    <ClCompile Include="Signing_page.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Electronic_Product.h" />
-    <ClInclude Include="Signing_page.h" />
+    <ClInclude Include="Headers\Electronic_Product.h" />
+    <ClInclude Include="Headers\Login_page.h" />
+    <ClInclude Include="Headers\Program.h" />
+    <ClInclude Include="Headers\Signing_page.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
