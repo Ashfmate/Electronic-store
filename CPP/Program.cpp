@@ -1,6 +1,8 @@
 #include "../Headers/Program.h"
 #include <conio.h>
 
+#define PAUSE while(!_kbhit())
+
 Program::Program()
 {
 	funcs[Signing] = [&]()
@@ -23,6 +25,7 @@ int Program::start()
 	
 	funcs[converted]();
 
+	PAUSE;
 	return 0;
 }
 
