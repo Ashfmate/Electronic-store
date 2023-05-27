@@ -1,4 +1,5 @@
 #include "../Headers/Program.h"
+#include <conio.h>
 
 Program::Program()
 {
@@ -16,6 +17,12 @@ Program::Program()
 
 int Program::start()
 {
+	funcs[Signing]();
+
+	auto converted = sign_choice_to_Pages_converter(Signin_page_result);
+	
+	funcs[converted]();
+
 	return 0;
 }
 
